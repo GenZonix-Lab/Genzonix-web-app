@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Header from './Header'
-import Footer from './Footer'
-import Home from './Home'
-import PrivacyPolicy from './Supportpages/PrivacyPolicy'
-import Policy from './Supportpages/Policy'
-import TermsConditions from './Supportpages/Terms'
-import Faq from './Supportpages/Faq'
-import Support from './Supportpages/Support'
+import Header from './application/main/Header'
+import Footer from './application/main/Footer'
+import Home from './application/main/Home'
+import PrivacyPolicy from './application/Supportpages/PrivacyPolicy'
+import Policy from './application/Supportpages/Policy'
+import TermsConditions from './application/Supportpages/Terms'
+import Faq from './application/Supportpages/Faq'
+import Support from './application/Supportpages/Support'
+import Missing from './Missing'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/terms&Conditions" element={<TermsConditions />} />
         <Route path="/faq/" element={<Faq />} />
         <Route path="/support" element={<Support />} />
+        <Route path='*' element={<Missing/>}/>
       </Routes>
       <Footer />
     </>

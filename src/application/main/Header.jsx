@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-  <>
   <header>
     <nav className="navbar navbar-expand-xl navbar-dark main-bg">
       <div className="container-fluid d-flex justify-content-center"> 
@@ -14,7 +13,6 @@ const Header = () => {
       </div >       
     </nav>
   </header>
-  </>
 )};
 
 export default Header;

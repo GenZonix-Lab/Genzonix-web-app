@@ -3,7 +3,6 @@ import { NavLink ,Link} from 'react-router-dom';
 
 import {FaInstagram} from "react-icons/fa";
 import {FaLinkedin } from "react-icons/fa6";
-import ScrollToTop from '../Components/ScrollToTop'
 const Support = () => {
   return (
     <>
@@ -20,18 +19,18 @@ const Support = () => {
       <div className="mt-4 f-graduate"><h2>Frequently Asked Questions (FAQs)</h2></div>
       <div className='p-3'>
         <p>Before reaching out, check our FAQ section for quick answers to common queries. We have compiled guides on product setup, troubleshooting steps, and best practices for using our DIY kits.</p>
-        <div><button className='btn btn-default p-2'><ScrollToTop /><NavLink to={'/faq'}>Visit our FAQ Page</NavLink></button></div>
+        <div><button className='btn btn-default p-2'><NavLink to={'/faq'}>Visit our FAQ Page</NavLink></button></div>
       </div>
       <div className="mt-4 f-graduate"><h2>Community Support</h2></div>
       <div className="p-3">
         <p>Join our growing community of makers and tech enthusiasts! Share your projects, ask for advice, and collaborate with like-minded individuals.</p>
-        <p>Follow us on<button className='btn btn-link pb-1'><ScrollToTop /><NavLink to={"https://www.instagram.com/genzonix/"} target='blank'> <FaInstagram/> Instagram</NavLink></button>, and  <button className='btn btn-link pb-1'><NavLink to={"http://www.linkedin.com/in/genzonix"} target='blank'> <FaLinkedin/> LinkedIn</NavLink></button> for updates and discussions.</p>
+        <p>Follow us on<button className='btn btn-link pb-1'><NavLink to={"https://www.instagram.com/genzonix/"} target='blank'> <FaInstagram/> Instagram</NavLink></button>, and  <button className='btn btn-link pb-1'><NavLink to={"http://www.linkedin.com/in/genzonix"} target='blank'> <FaLinkedin/> LinkedIn</NavLink></button> for updates and discussions.</p>
       </div>
 
       <div className="mt-4 f-graduate"><h2>Warranty & Returns</h2></div>
       <div className='mt-2 p-3'>      
         <p>We stand by the quality of our products. If you experience any issues with your kit, please refer to our Warranty and Return Policy for assistance.</p>
-        <p><button className='btn btn-link p-1'><ScrollToTop /><NavLink to={"/policy"}> Read Warranty & Returns Policy</NavLink></button></p>
+        <p><button className='btn btn-link p-1'><NavLink to={"/policy"}> Read Warranty & Returns Policy</NavLink></button></p>
       </div>
       <div className="mt-4 f-graduate"><h2>Legal Policies</h2></div>
       <div className='mt-2 p-3'>
